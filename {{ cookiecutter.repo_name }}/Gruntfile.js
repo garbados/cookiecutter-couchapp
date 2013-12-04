@@ -86,14 +86,16 @@ module.exports = function (grunt) {
     'couch-compile': {
       dist: {
         files: {
-          'app.json': 'couchapp/*'
+          'app.json': 'couchapp'
         }
       }
     },
     'couch-push': {
       options: '<%= config.auth %>',
-      files: {
-        '<%= config.database_url %>': 'app.json'
+      dist: {
+        files: {
+          '<%= config.database_url %>': 'app.json'
+        } 
       }
     },
   });

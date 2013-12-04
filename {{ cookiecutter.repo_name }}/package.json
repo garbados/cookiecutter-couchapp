@@ -1,14 +1,25 @@
 {
   "name": "{{ cookiecutter.repo_name }}",
+  "title": "{{ cookiecutter.project_name }}",
   "version": "0.0.0",
   "description": "{{ cookiecutter.description }}",
+  "homepage": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt travis"
   },
   "keywords": [],
   "author": "{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>",
-  "license": "{{ cookiecutter.license }}",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.git"
+  },
   "devDependencies": {
     "matchdep": "~0.3.0",
     "grunt": "~0.4.2",

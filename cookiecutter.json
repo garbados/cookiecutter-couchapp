@@ -7,6 +7,6 @@
   "description": "A jump-start for CouchApp development.",
   "database_url": "http://localhost:5984/couchapp",
   "couchapp_id": "app",
-  "database_username": "username",
-  "database_password": "password"
+  "database_username": "",
+  "database_password": ""
 }

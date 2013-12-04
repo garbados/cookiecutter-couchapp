@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "user": "{{ cookiecutter.database_username }}",
+    "pass": "{{ cookiecutter.database_password }}"
+  },
+  "database_url": "{{ cookiecutter.database_url }}"
+}
