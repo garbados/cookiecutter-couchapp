@@ -45,6 +45,16 @@ module.exports = function (grunt) {
             filter: 'isFile'
           }
         ]
+      },
+      deploy: {
+        files: [
+          {
+            expand: true,
+            cwd: 'dist/',
+            src: ['*', '**/*'],
+            dest: 'couchapp/_attachments/' 
+          }
+        ]
       }
     },
     browserify: {
